@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-umdashboard',
@@ -9,6 +10,7 @@ export class UMDashboardComponent implements OnInit {
 
   toggleSideMenu:boolean = true;
 
+  constructor(public router:Router){}
 
   ngOnInit(): void {
   }
@@ -16,6 +18,10 @@ export class UMDashboardComponent implements OnInit {
   
   toggleSideBar(){
    this.toggleSideMenu = !this.toggleSideMenu;   
+  }
+
+  navigate(name:any){
+   return this.router.navigate([name]);
   }
   
 }
