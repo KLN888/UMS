@@ -61,13 +61,6 @@ This Spring Boot project provides functionality to save Excel file data into bot
 3. Verify the data in both databases to ensure successful import.
 
 
-## Output and Screenshots
-
-![Screenshot 2024-03-20 205730](https://github.com/analytixtake1/analytix-backend/assets/61576958/d6ff5346-9ac4-43e9-9c00-a4146c4f8ddb)
-![Screenshot 2024-03-20 205716](https://github.com/analytixtake1/analytix-backend/assets/61576958/549c7c32-820b-4650-ba47-8fd58f01d182)
-![Screenshot 2024-03-20 205505](https://github.com/analytixtake1/analytix-backend/assets/61576958/cbb0650c-9288-4870-ba8b-b377689d2a40)
-![Screenshot 2024-03-20 205453](https://github.com/analytixtake1/analytix-backend/assets/61576958/2e500d78-5d3f-4304-bdf8-0e8a4be60299)
-![Screenshot 2024-03-20 205858](https://github.com/analytixtake1/analytix-backend/assets/61576958/c2f3d956-3172-437e-a42e-e6218e84649a)
 
 ## Contributing
 
