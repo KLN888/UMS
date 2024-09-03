@@ -1,0 +1,11 @@
+<highcharts-chart *ngIf='dataPresent'
+  [Highcharts]="Highcharts"
+  [options]="chartOptions? chartOptions: {}"
+  [(update)]="updateChart"
+  [oneToOne]="true"
+
+  style="width: 100%;display: block; height: 100%;"
+>
+</highcharts-chart>
+
+

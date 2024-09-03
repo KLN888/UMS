@@ -1,11 +1,54 @@
-<div class="card">
-    <div class="card-body">
-        <h4 class="card-title">Title</h4>
-        <p class="card-text">Text</p>
-        <div class="mb-3">
-          <label for="" class="form-label">File</label>
-          <input type="file"
-            class="form-control" name="" id="" aria-describedby="helpId" placeholder="" (change)="upload($event)">
+<div class="container-fluid">
+
+
+  <div class="row mt-2">
+    <div class="card mt-2">
+        <div class="card-body">
+            <!-- <h4 class="card-title">Title</h4>
+            <p class="card-text">Text</p> -->
+            <div class="mb-3">
+              <label for="" class="form-label">File</label>
+              <input type="file"
+                class="form-control" name="" id="" aria-describedby="helpId" placeholder="" (change)="upload($event)">
+            </div>
         </div>
+    </div>     
+  </div>
+
+    
+    
+    <div class="row mt-2">
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Chart1</h3>
+            <!-- <p class="card-text">Text</p> -->
+            <div class="highcharts-figure">
+              <div id="parent-container">
+              <div id="play-controls">
+                <button id="play-pause-button"  [ngClass]="isPlay ? 'fa fa-play':'fa fa-pause'" (click)="togglePlayPause()" ></button>
+                <input id="play-range" type="range"  [ngModel]="chartInp" min="1960" max="2022" />
+              </div>
+              <div id="container">
+                <app-charts  [chartOptions]="barChartConfig.config"></app-charts>
+              </div>
+            </div>
+              <p class="highcharts-description">
+                  Bar chart showing the world population by countries from 1960 to 2022.
+              </p>
+          </div>
+            <!-- <app-charts *ngIf="barChart.visibility.showChart" [chartOptions]="barChart.config"></app-charts> -->
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-lg-6">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Chart2</h3>
+            <p class="card-text">Text</p>
+          </div>
+        </div>
+      </div> -->
     </div>
+
 </div>
